@@ -1,0 +1,28 @@
+  <ion-content text-center padding class="choose-course">
+  <img class="logo-center" src="assets/images/minutu_logo.png"/>
+  <ion-item>
+    <ion-label>Select a Course</ion-label>
+    <ion-select [(ngModel)]="Courses">
+      <ion-option value="001-crowdsourcing" selected="true">Crowdsourcing</ion-option>
+      <ion-option value="002-distributed-algorithms">Distributed Algorithms</ion-option>
+      <ion-option value="003-human-computer-interaction">Human Computer Interaction</ion-option>
+      <ion-option value="004-web-engineering">Web Engineering</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Select Topic </ion-label>
+    <ion-select [(ngModel)]="Topic">
+      <ion-option value="001-design" selected="true">Design</ion-option>
+      <ion-option value="002-gamification">Gamification</ion-option>
+      <ion-option value="003-data-labeling">Data Labeling</ion-option>
+      <ion-option value="004-human-machine-cooperation">Human Machine Cooperation</ion-option>
+    </ion-select>
+  </ion-item>
+
+    <button ion-button color="orange" menuToggle>View Summary</button>
+
+    <button ion-button color="primary" menuToggle>Leave Feedback</button>
+</ion-content>
+
+

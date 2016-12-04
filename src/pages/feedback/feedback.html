@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>{{topic}}:feedback</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content text-center padding class="feedback">
+  <div>
+    <ion-list>
+      <ion-item>
+        <ion-label>Emojis</ion-label>
+        <ion-select [(ngModel)]="emojis">
+          <ion-option value="nes"><img src="assets/emojis/00a9.png"></ion-option>
+          <ion-option value="n64"><img src="assets/emojis/00a9.png"></ion-option>
+          <ion-option value="ps"><img src="assets/emojis/00a9.png"></ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>It is...</ion-label>
+        <ion-select [(ngModel)]="emotion">
+          <ion-option value="nes">Valuable</ion-option>
+          <ion-option value="n64">Confusing</ion-option>
+          <ion-option value="ps">Curious</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-item>
+      <ion-label floating>Description</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+
+    <p>
+      <button ion-button large  color="orange" menuToggle>+</button>
+      <button ion-button large   color="secondary" menuToggle>Finish</button>
+    </p>
+  </div>
+
+</ion-content>

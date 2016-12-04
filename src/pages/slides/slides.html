@@ -1,0 +1,61 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>{{topic}}: slides selection.</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content text-center padding class="slides">
+  <div>
+    <ion-list>
+      <ion-item>
+        <ion-label>Emojis</ion-label>
+        <ion-select [(ngModel)]="emojis">
+          <ion-option value="nes"><img src="assets/emojis/00a9.png"></ion-option>
+          <ion-option value="n64"><img src="assets/emojis/00a9.png"></ion-option>
+          <ion-option value="ps"><img src="assets/emojis/00a9.png"></ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>It is...</ion-label>
+        <ion-select [(ngModel)]="emotion">
+          <ion-option value="nes">Valuable</ion-option>
+          <ion-option value="n64">Confusing</ion-option>
+          <ion-option value="ps">Curious</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <div class="slide-display">
+      <img class="logo-center" src="assets/images/prototype/slide.png"/>
+      <ion-icon name="expand" class="expand-icon"></ion-icon>
+    </div>
+
+
+
+    <p>
+      <button ion-button  color="grey" menuToggle>
+        <ion-icon name="help-circle"></ion-icon>
+      </button>
+      <button ion-button   color="light-blue" menuToggle>
+        <ion-icon name="skip-backward"></ion-icon>
+      </button>
+      <button ion-button    color="light-blue" menuToggle>
+        <ion-icon name="skip-forward"></ion-icon>
+      </button>
+    </p>
+
+    <div class="group-b">
+      <button ion-button large  color="orange" menuToggle>+</button>
+      <button ion-button large   color="secondary" menuToggle>Next</button>
+    </div>
+
+
+  </div>
+
+
+
+</ion-content>
+

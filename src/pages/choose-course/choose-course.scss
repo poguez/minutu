@@ -1,0 +1,35 @@
+.choose-course {
+  color: white!important;
+  height:100%;
+  &>*{
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center;
+    align-content: center!important;
+    align-items: center!important;
+  }
+  button{
+    min-width: 60vw;
+    min-height: 7vh;
+  }
+  .item-block{
+    max-width: 70vw;
+  }
+  .logo-center{
+    margin-top:10vh;
+    max-width: 80vw;
+  }
+  .item-block{
+    margin: 2vh 0;
+  }
+  .item-select{
+    background-color: map-get($colors, 'primary');
+  }
+    * > .select-md .select-icon .select-icon-inner {
+      color: white;
+    }
+    * > .label{
+      color: white;
+    }
+
+}
