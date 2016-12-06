@@ -8,6 +8,7 @@ import { Slides } from '../pages/slides/slides';
 import { DrawingPadPage } from '../pages/drawing-pad/drawing-pad';
 import { SignaturePadModule } from 'angular2-signaturepad';
 import { FeedbackReadyPage } from '../pages/feedback-ready/feedback-ready';
+import { ReviewPage } from '../pages/review/review';
 
 
 
@@ -19,7 +20,8 @@ import { FeedbackReadyPage } from '../pages/feedback-ready/feedback-ready';
     Feedback,
     Slides,
     DrawingPadPage,
-    FeedbackReadyPage
+    FeedbackReadyPage,
+    ReviewPage
   ],
   imports: [
     SignaturePadModule,
@@ -33,7 +35,8 @@ import { FeedbackReadyPage } from '../pages/feedback-ready/feedback-ready';
     Feedback,
     Slides,
     DrawingPadPage,
-    FeedbackReadyPage
+    FeedbackReadyPage,
+    ReviewPage
   ],
   providers: []
 })
