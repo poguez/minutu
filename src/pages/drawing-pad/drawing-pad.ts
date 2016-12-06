@@ -12,7 +12,6 @@ import { SignaturePad } from 'angular2-signaturepad/signature-pad';
 export class DrawingPadPage {
 
   ionViewDidLoad() {
-    console.log('Hello DrawingPadPage Page');
   }
 
   @ViewChild(SignaturePad) signaturePad: SignaturePad;
