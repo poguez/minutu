@@ -27,12 +27,12 @@
   * > .label {
     color: white;
   }
+  .slide-display {
+    position: relative;
+    height: 320px;
+  }
 }
 
-.slide-display {
-  position: relative;
-  height: 30vh;
-}
 .expand-icon {
   color: map-get($colors, 'mid-gray');
   position:absolute;

@@ -1,5 +1,5 @@
 import { Component, ViewChild  } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ViewController } from 'ionic-angular';
 import { SignaturePadModule } from 'angular2-signaturepad';
 import { SignaturePad } from 'angular2-signaturepad/signature-pad';
 
@@ -24,8 +24,11 @@ export class Feedback {
     'penColor':  "rgba(255,165,0,0.65)"
   };
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private viewCtrl: ViewController) {
     // no-op
+  }
+  ionViewWillEnter() {
+    this.viewCtrl.showBackButton(true);
   }
 
   ngAfterViewInit() {

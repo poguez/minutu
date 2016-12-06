@@ -1,33 +1,23 @@
 <ion-header>
-
   <ion-navbar color="primary">
-    <ion-title>{{topic}}:feedback</ion-title>
+    <button ion-button icon-only menuToggle large white item-left>
+      <ion-icon name="menu" > </ion-icon>
+    </button>
+    <ion-title  >{{topic}}:feedback</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content text-center padding class="feedback">
   <div>
-    <ion-list>
-      <ion-item>
-        <ion-label>Emojis</ion-label>
-        <ion-select>
-          <ion-option value="nes">
-            <img src="/assets/emojis/00a9.png">
-          </ion-option>
-          <ion-option value="n64"><img src="/assets/emojis/00a9.png"></ion-option>
-          <ion-option value="ps"><img src="/assets/emojis/00a9.png"></ion-option>
-        </ion-select>
-      </ion-item>
-    </ion-list>
-
+    <img src="/assets/emojis/interested.png" style="width:80px;">
     <ion-list>
       <ion-item>
         <ion-label>It is...</ion-label>
         <ion-select>
-          <ion-option value="nes">Valuable</ion-option>
-          <ion-option value="n64">Confusing</ion-option>
-          <ion-option value="ps">Curious</ion-option>
+          <ion-option value="valuable">Valuable</ion-option>
+          <ion-option value="confusing">Confusing</ion-option>
+          <ion-option value="curious">Curious</ion-option>
         </ion-select>
       </ion-item>
     </ion-list>
@@ -43,7 +33,7 @@
       <ion-icon name="expand" class="expand-icon"></ion-icon>
     </div>
 
-    <p>
+    <p class="confirmation-group">
       <button ion-button color="orange" menuToggle>+</button>
       <button ion-button color="secondary" menuToggle>Finish</button>
     </p>

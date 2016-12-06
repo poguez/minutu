@@ -35,7 +35,6 @@ export class MyApp {
       { title: 'ChooseCourse', component: ChooseCourse },
       { title: 'Feedback', component: Feedback },
       { title: 'Slides', component: Slides },
-      { title: 'DrawingPadPage', component: DrawingPadPage },
       { title: 'FeedbackReady', component: FeedbackReadyPage },
     ];
   }

@@ -8,6 +8,29 @@ canvas{
   width: 320px;
   height: 183px;
 }
+ion-navbar{
+  color: white;
+}
+
+
+.interesting{
+  &::before{
+    content: "";
+    display: block;
+    background: url('/assets/emojis/confused.png') no-repeat left top;
+    background-size: contain;
+  }
+  padding-left: 30px;
+}
+
+.slide-display{
+  margin: 3vh 0;
+  height: 203px;
+}
+
+.confirmation-group{
+  margin: 3vh;
+}
 
 page-feedback {
 
@@ -17,6 +40,7 @@ page-feedback {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+
 
 
   .m-signature-pad {

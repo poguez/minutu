@@ -1,6 +1,8 @@
 <ion-header>
-
   <ion-navbar color="primary">
+    <button ion-button icon-only menuToggle large white item-left>
+      <ion-icon name="menu"> </ion-icon>
+    </button>
     <ion-title>{{topic}}: slides selection.</ion-title>
   </ion-navbar>
 
@@ -8,16 +10,8 @@
 
 <ion-content text-center padding class="slides">
   <div>
+      <img src="/assets/emojis/interested.png" style="width:80px;">
     <ion-list>
-      <ion-item>
-        <ion-label>Emojis</ion-label>
-        <ion-select>
-          <ion-option value="nes"><img src="assets/emojis/00a9.png"></ion-option>
-          <ion-option value="n64"><img src="assets/emojis/00a9.png"></ion-option>
-          <ion-option value="ps"><img src="assets/emojis/00a9.png"></ion-option>
-        </ion-select>
-      </ion-item>
-
       <ion-item>
         <ion-label>It is...</ion-label>
         <ion-select>
@@ -35,7 +29,7 @@
 
 
 
-    <p>
+    <p class="slide-tools">
       <button ion-button  color="grey" menuToggle>
         <ion-icon name="help-circle"></ion-icon>
       </button>
