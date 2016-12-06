@@ -11,6 +11,7 @@ import { Feedback } from '../pages/feedback/feedback';
 import { Slides } from '../pages/slides/slides';
 import { DrawingPadPage } from '../pages/drawing-pad/drawing-pad';
 import { FeedbackReadyPage } from '../pages/feedback-ready/feedback-ready';
+import { ReviewPage } from '../pages/review/review';
 
 
 @Component({
@@ -37,6 +38,7 @@ export class MyApp {
       { title: 'Slides', component: Slides },
       { title: 'DrawingPadPage', component: DrawingPadPage },
       { title: 'FeedbackReady', component: FeedbackReadyPage },
+      { title: 'ReviewPage', component: ReviewPage },
     ];
   }
 

@@ -1,0 +1,43 @@
+.review {
+
+  height:100%;
+
+
+  .logo-center{
+    margin-top: 2.5vw;
+    width : 15vw;
+    height: 15vw;
+  }
+
+  i{
+    font-style: italic;
+  }
+
+  .splash-text{
+    margin-left: 3vw;
+    margin-top: 4vw;
+    font-weight:300;
+    color:#69717d;
+    max-width: 40vw;
+    height: 12.5vw;
+  }
+
+ /* button{
+    margin:4vh 0;
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }*/
+  .arrows {
+    width : 20vw;
+    height: 15vh;
+  }
+  .review-div {
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: row;
+    width : 100vw;
+    height: 15vh;
+  }
+
+}
+
