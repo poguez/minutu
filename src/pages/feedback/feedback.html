@@ -12,9 +12,11 @@
       <ion-item>
         <ion-label>Emojis</ion-label>
         <ion-select>
-          <ion-option value="nes"><img src="assets/emojis/00a9.png"></ion-option>
-          <ion-option value="n64"><img src="assets/emojis/00a9.png"></ion-option>
-          <ion-option value="ps"><img src="assets/emojis/00a9.png"></ion-option>
+          <ion-option value="nes">
+            <img src="/assets/emojis/00a9.png">
+          </ion-option>
+          <ion-option value="n64"><img src="/assets/emojis/00a9.png"></ion-option>
+          <ion-option value="ps"><img src="/assets/emojis/00a9.png"></ion-option>
         </ion-select>
       </ion-item>
     </ion-list>
@@ -35,10 +37,15 @@
       <ion-textarea></ion-textarea>
     </ion-item>
 
+    <div class="slide-display">
+      <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()">
+      </signature-pad>
+      <ion-icon name="expand" class="expand-icon"></ion-icon>
+    </div>
 
     <p>
-      <button ion-button large  color="orange" menuToggle>+</button>
-      <button ion-button large   color="secondary" menuToggle>Finish</button>
+      <button ion-button color="orange" menuToggle>+</button>
+      <button ion-button color="secondary" menuToggle>Finish</button>
     </p>
   </div>
 
