@@ -10,7 +10,7 @@ import { ChooseCourse } from '../pages/choose-course/choose-course';
 import { Feedback } from '../pages/feedback/feedback';
 import { Slides } from '../pages/slides/slides';
 import { DrawingPadPage } from '../pages/drawing-pad/drawing-pad';
-
+import { FeedbackReadyPage } from '../pages/feedback-ready/feedback-ready';
 
 
 @Component({
@@ -36,6 +36,7 @@ export class MyApp {
       { title: 'Feedback', component: Feedback },
       { title: 'Slides', component: Slides },
       { title: 'DrawingPadPage', component: DrawingPadPage },
+      { title: 'FeedbackReady', component: FeedbackReadyPage },
     ];
   }
 

@@ -7,6 +7,7 @@ import { ChooseCourse } from '../pages/choose-course/choose-course';
 import { Slides } from '../pages/slides/slides';
 import { DrawingPadPage } from '../pages/drawing-pad/drawing-pad';
 import { SignaturePadModule } from 'angular2-signaturepad';
+import { FeedbackReadyPage } from '../pages/feedback-ready/feedback-ready';
 
 
 
@@ -17,7 +18,8 @@ import { SignaturePadModule } from 'angular2-signaturepad';
     ChooseCourse,
     Feedback,
     Slides,
-    DrawingPadPage
+    DrawingPadPage,
+    FeedbackReadyPage
   ],
   imports: [
     SignaturePadModule,
@@ -30,7 +32,8 @@ import { SignaturePadModule } from 'angular2-signaturepad';
     ChooseCourse,
     Feedback,
     Slides,
-    DrawingPadPage
+    DrawingPadPage,
+    FeedbackReadyPage
   ],
   providers: []
 })
