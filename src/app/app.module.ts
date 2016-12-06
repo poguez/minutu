@@ -5,6 +5,9 @@ import { WelcomePage } from '../pages/welcome-page/welcome-page';
 import { Feedback } from '../pages/feedback/feedback';
 import { ChooseCourse } from '../pages/choose-course/choose-course';
 import { Slides } from '../pages/slides/slides';
+import { DrawingPadPage } from '../pages/drawing-pad/drawing-pad';
+import { SignaturePadModule } from 'angular2-signaturepad';
+
 
 
 @NgModule({
@@ -13,9 +16,11 @@ import { Slides } from '../pages/slides/slides';
     WelcomePage,
     ChooseCourse,
     Feedback,
-    Slides
+    Slides,
+    DrawingPadPage
   ],
   imports: [
+    SignaturePadModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -24,7 +29,8 @@ import { Slides } from '../pages/slides/slides';
     WelcomePage,
     ChooseCourse,
     Feedback,
-    Slides
+    Slides,
+    DrawingPadPage
   ],
   providers: []
 })

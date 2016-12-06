@@ -1,13 +1,49 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild  } from '@angular/core';
 
 import { NavController, NavParams } from 'ionic-angular';
-
+import {Validators, FormBuilder} from '@angular/forms';
 
 
 @Component({
   templateUrl: 'choose-course.html'
 })
+
 export class ChooseCourse {
+
+  courseList: {id: number, name:string}[];
+  topicList: Array<{id: number, name: string}>;
+  minutu: {course: string, topic: string};
+
+  logForm() {
+    console.log()
+  }
+
+  ionViewDidLoad() {
+    console.log('Hello DrawingPadPage Page');
+  }
+
+  constructor(public navCtrl: NavController, private formBuilder: FormBuilder) {
+
+    this.courseList = [
+      {id: 1, name: "Crowdsourcing"},
+      {id: 2, name: "Distributed Algorithms"},
+      {id: 3, name: "Human Computer Interaction"},
+      {id: 4, name: "Web Engineering"},
+    ];
+    this.topicList = [
+      {id: 1, name: "Design"},
+      {id: 2, name: "Gamification"},
+      {id: 3, name: "Data Labeling"},
+      {id: 4, name: "Human Machine Cooperation"},
+    ];
+    this.minutu = {
+      course: '',
+      topic: ''
+    };
+  }
+
+
+
   // selectedItem: any;
   // icons: string[];
   // items: Array<{title: string, note: string, icon: string}>;

@@ -9,6 +9,7 @@ import { WelcomePage } from '../pages/welcome-page/welcome-page';
 import { ChooseCourse } from '../pages/choose-course/choose-course';
 import { Feedback } from '../pages/feedback/feedback';
 import { Slides } from '../pages/slides/slides';
+import { DrawingPadPage } from '../pages/drawing-pad/drawing-pad';
 
 
 
@@ -33,7 +34,8 @@ export class MyApp {
       { title: 'Welcome', component: WelcomePage },
       { title: 'ChooseCourse', component: ChooseCourse },
       { title: 'Feedback', component: Feedback },
-      { title: 'Slides', component: Slides }
+      { title: 'Slides', component: Slides },
+      { title: 'DrawingPadPage', component: DrawingPadPage },
     ];
   }
 
